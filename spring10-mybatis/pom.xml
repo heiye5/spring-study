@@ -37,11 +37,13 @@
             <version>5.3.6</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
-            <groupId>error</groupId>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>unknown</version>
+            <version>5.3.7</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.aspectj</groupId>
