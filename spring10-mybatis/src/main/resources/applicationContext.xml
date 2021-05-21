@@ -9,4 +9,8 @@
     <bean id="userMapper" class="com.kuang.mapper.UserMapperImpl">
         <property name="sqlSession" ref="sqlSession" />
     </bean>
+
+    <bean id="userMapper2" class="com.kuang.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
 </beans>

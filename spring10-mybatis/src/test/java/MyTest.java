@@ -12,7 +12,7 @@ public class MyTest {
     public void test() throws IOException {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserMapper userMapper = context.getBean("userMapper",UserMapper.class);
+        UserMapper userMapper = context.getBean("userMapper2",UserMapper.class);
         List<User> userList = userMapper.selectUser();
 
         for (User user : userList) {
