@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="com.kuang.pojo.Address">
+        <property name="address" value="黄齑淡饭"/>
+    </bean>
+
+    <bean id="student" class="com.kuang.pojo.Student">
+<!--        基本类型注入-->
+        <property name="name" value="健身房" />
+
+<!--        bean注入-->
+        <property name="addres" ref="address" />
+
+<!--        数组注入-->
+        <property name="books">
+            <array>
+                <value>西游记</value>
+                <value>三国演义</value>
+                <value>水浒传</value>
+                <value>红楼梦</value>
+            </array>
+        </property>
+
+<!--        list-->
+        <property name="hobby">
+            <list>
+                <value>唱歌</value>
+                <value>游戏</value>
+                <value>篮球</value>
+            </list>
+        </property>
+
+<!--        map-->
+        <property name="card">
+            <map>
+                <entry key="dsf" value="9835" />
+                <entry key="d8945" value="9r4955" />
+            </map>
+        </property>
+
+<!--        set-->
+        <property name="game">
+            <set>
+                <value>943</value>
+                <value>yubnfd</value>
+                <value>489f</value>
+            </set>
+        </property>
+
+<!--        nul-->
+        <property name="wife">
+            <null></null>
+        </property>
+
+<!--        properties-->
+        <property name="info">
+            <props>
+                <prop key="stu">34455</prop>
+                <prop key="url">49036</prop>
+                <prop key="usename">urff</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>
